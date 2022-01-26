@@ -6,7 +6,7 @@ from django.conf import settings
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.test import Client, TestCase, override_settings
 from django.urls import reverse
-from posts.models import Comment, Group, Post, User, Follow
+from posts.models import Comment, Group, Post, User
 
 from . import constants
 
