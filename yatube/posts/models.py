@@ -84,3 +84,8 @@ class Follow(models.Model):
         related_name="following",
         verbose_name="на кого подписываютс",
     )
+    # я не знаю как сделать тут проверку чтобы юзер не подписался сам на себя
+    # я это сделал во вьюхе
+
+    class Meta:
+        unique_together = ("user", "author")
